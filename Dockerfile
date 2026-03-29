@@ -1,3 +1,3 @@
 FROM alpine:latest
-WORKDIR /models
+COPY data/models /
 CMD ["tail", "-f", "/dev/null"]
