@@ -1,10 +1,10 @@
 services:
   whisper-model-hub:
-    image: tuanitfdev/whisper-model-hub:${APP_TAG:-latest}
+    image: ghcr.io/tuanitfdev/whisper-model-hub-deploy:${APP_TAG:-latest}
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: whisper_model_hub_container
+    container_name: whisper-model-hub-container
     # Cấu hình quan trọng nhất để nhận diện GPU NVIDIA
     # deploy:
     #   resources:
